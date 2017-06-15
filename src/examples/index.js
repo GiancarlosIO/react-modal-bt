@@ -25,7 +25,7 @@ class App extends Component {
 
     return (
       <div className="container">
-        <h1> My first modal component built from scratch </h1>
+        <h1> Simple React-modal-bt </h1>
         <button onClick={this.showModal}>
           Open Modal
         </button>
