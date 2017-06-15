@@ -1,5 +1,5 @@
 {
-  "name": "simple-modal",
+  "name": "react-modal-bt",
   "version": "0.1.0",
   "main": "./src/modal.js",
   "license": "MIT",
