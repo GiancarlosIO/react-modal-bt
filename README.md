@@ -1,1 +1,10 @@
-A simple boilerplate for es6 built with webpack, es6 features and eslint
+A simple React Modal built with react-portal and inspired in modals of react-bootstrap.
+
+## Active Development
+The modal is currently under development.
+
+## Documentation
+In progress...
+
+## Examples
+In progress...
