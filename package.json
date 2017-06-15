@@ -4,6 +4,7 @@
   "main": "./src/modal.js",
   "license": "MIT",
   "scripts": {
+    "build": "webpack",
     "dev": "webpack -d && webpack-dev-server --content-base dist/ --inline --hot --port 1234 --history-api-fallback"
   },
   "dependencies": {
