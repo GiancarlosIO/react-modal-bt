@@ -1,5 +1,5 @@
 {
-  "name": "modal",
+  "name": "simple-modal",
   "version": "0.1.0",
   "main": "./src/modal.js",
   "license": "MIT",
