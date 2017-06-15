@@ -22,12 +22,12 @@ function isNodeInRoot(node, root) {
 
 class Modal extends Component {
 
-  state = {
-    isOpen: false
-  };
-
-  componentDidMount() {
-    document.addEventListener('mousedown', this.handleMouseClickOutSide);
+  componentWillUpdate(nextProps) {
+    if (nextProps.isOpened) {
+      document.addEventListener('mousedown', this.handleMouseClickOutSide);
+    } else {
+      document.addEventListener('mousedown', this.handleMouseClickOutSide);
+    }
   }
 
   componentWillUnmount() {
