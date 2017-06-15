@@ -4,7 +4,7 @@ var path = require('path');
 
 module.exports = {
   entry: [
-    path.resolve(__dirname, 'src') + '/app/index.js'
+    path.resolve(__dirname, 'src') + '/examples/index.js'
   ],
   output: {
     path: path.resolve(__dirname, 'dist') + '/app',
@@ -18,7 +18,7 @@ module.exports = {
         include: path.resolve(__dirname, 'src'),
         loader: 'babel-loader',
         query: {
-          presets: ['es2015', 'stage-0', 'stage-1']
+          presets: ['es2015', 'react', 'stage-0', 'stage-1']
         }
       },
       {
