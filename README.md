@@ -7,6 +7,8 @@ The modal is currently under development.
 ```shell
 npm install react-modal-bt
 ```
+Then import the css file 'modal.css'
+
 
 ## Documentation
 In progress...

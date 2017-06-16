@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import '../../styles.css';
-import '../lib/modal.scss';
+import '../lib/modal.css';
 import Modal from '../lib/modal';
 
 class App extends Component {
@@ -25,7 +25,6 @@ class App extends Component {
 
   render() {
     const { isOpened } = this.state;
-    console.log('modal component', Modal);
     return (
       <div className="container">
         <h1> Simple React-modal-bt </h1>
