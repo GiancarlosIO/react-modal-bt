@@ -20,7 +20,7 @@ function isNodeInRoot(node, root) {
   return false;
 }
 
-class Modal extends Component {
+export default class Modal extends Component {
 
   componentDidMount() {
     document.addEventListener('mousedown', this.handleMouseClickOutSide);
@@ -80,7 +80,6 @@ class Modal extends Component {
 // set default props
 Modal.defaultProps = {
   closeOnEsc: undefined,
-  closeOnOutsideClick: undefined,
   onClose: undefined,
 };
 
@@ -96,5 +95,3 @@ Modal.propTypes = {
 Modal.Header = Header;
 Modal.Footer = Footer;
 Modal.Body = Body;
-
-export default Modal;

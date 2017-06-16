@@ -1,10 +1,10 @@
 {
   "name": "react-modal-bt",
-  "version": "0.1.4",
-  "main": "./src/lib/modal.js",
+  "version": "0.2.0",
+  "main": "dist/lib/react-modal-bt.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
+    "build": "NODE_ENV=production webpack --config ./webpack.dist.config.js --progress --colors",
     "dev": "webpack -d && webpack-dev-server --content-base dist/ --inline --hot --port 1234 --history-api-fallback"
   },
   "dependencies": {
