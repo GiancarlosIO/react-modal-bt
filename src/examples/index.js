@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 
 import '../../styles.css';
 import '../lib/modal.scss';
-import Modal from '../../dist/lib/react-modal-bt';
-// import Modal from '../lib/modal';
+import Modal from '../lib/modal';
 
 class App extends Component {
 
@@ -34,7 +33,16 @@ class App extends Component {
           Open Modal
         </button>
         <Modal isOpened={isOpened} onClose={this.closeModal}>
-          <h2>Modal</h2>
+          <Modal.Header>
+            <h2>Header</h2>
+          </Modal.Header>
+          <Modal.Body>
+            <h2>Body</h2>
+          </Modal.Body>
+          <Modal.Footer>
+            <h2>Footer</h2>
+            <button onClick={this.closeModal}>Close modal</button>
+          </Modal.Footer>
         </Modal>
       </div>
     );
