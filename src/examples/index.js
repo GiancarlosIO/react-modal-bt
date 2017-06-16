@@ -16,8 +16,10 @@ class App extends Component {
   }
 
   closeModal = () => {
-    console.log('closing modal');
-    this.setState({ isOpened: false });
+    console.log('before close the modal');
+    this.setState({ isOpened: false }, () => {
+      console.log('after close the modal');
+    });
   }
 
   render() {
@@ -32,7 +34,6 @@ class App extends Component {
         <Modal
           isOpened={isOpened}
           onClose={this.closeModal}
-          beforeClose={() => { console.log('before closing modal'); }}
           closeOnEsc
         >
           <Modal.Header>
@@ -45,7 +46,7 @@ class App extends Component {
           <Modal.Footer>
             <h2>Footer modal</h2>
             <h5>You can close the modal clicking outside or with ESC key</h5>
-            <button onClick={() => { this.setState({ isOpened: false }); }}>
+            <button onClick={this.closeModal}>
               CLOSE MODAL
             </button>
           </Modal.Footer>
