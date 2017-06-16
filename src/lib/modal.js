@@ -48,7 +48,6 @@ export default class Modal extends Component {
       return;
     }
     e.stopPropagation();
-    console.log('clicked outside');
     this.onClose();
   }
 
