@@ -9,7 +9,7 @@ npm install react-modal-bt
 ```
 Then import the css file
 ```shell
-import 'react-modal-bt/src/lib/modal.scss';
+import 'react-modal-bt/src/lib/modal.css';
 ```
 
 
